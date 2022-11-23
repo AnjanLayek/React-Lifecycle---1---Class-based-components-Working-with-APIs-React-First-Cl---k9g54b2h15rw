@@ -7,12 +7,13 @@ class App extends React.Component {
 
   handleClick(){
     this.setState({count: this.state.count+1})
+    console.log( "rendered" )
   }
   constructor(props){
     super(props)
     this.state = {count:0}
     this.handleClick = this.handleClick.bind(this);
-
+     
   }
 
   render() {
